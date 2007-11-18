@@ -1,22 +1,23 @@
 Summary: 	An eyes plugin for the Xfce panel
-Name: 		xfce-eyes-plugin
+Name: 		xfce4-eyes-plugin
 Version: 	4.4.0
-Release: 	%mkrel 2
-License:	GPL
+Release: 	%mkrel 3
+License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin
-Source0: 	http://goodies.xfce.org/releases/xfce4-eyes-plugin/xfce4-eyes-plugin-%{version}.tar.bz2
+Source0: 	http://goodies.xfce.org/releases/xfce4-eyes-plugin/%{name}-%{version}.tar.bz2
 Requires:	xfce-panel >= 4.4
 BuildRequires:	xfce-panel-devel >= 4.4
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	perl(XML::Parser)
+Obsoletes:	xfce-eyes-plugin
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 An eyes plugin for the Xfce panel.
 
 %prep
-%setup -qn xfce4-eyes-plugin-%{version}
+%setup -q
 
 %build
 %configure2_5x
@@ -26,7 +27,7 @@ An eyes plugin for the Xfce panel.
 rm -rf %{buildroot}
 %makeinstall_std 
 
-%find_lang xfce4-eyes-plugin
+%find_lang %{name}
 
 %post
 %update_icon_cache hicolor
@@ -37,9 +38,9 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f xfce4-eyes-plugin.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
-%doc ChangeLog COPYING AUTHORS
+%doc ChangeLog AUTHORS
 %{_libdir}/xfce4/panel-plugins/*
 %{_iconsdir}/hicolor/*/apps/xfce4-eyes.png
 %{_datadir}/xfce4/eyes/themes/*/*
