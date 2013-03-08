@@ -2,15 +2,15 @@
 
 Summary:	An eyes plugin for the Xfce panel
 Name:		xfce4-eyes-plugin
-Version:	4.4.1
-Release:	4
+Version:	4.4.2
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	xfce4-panel-devel >= 4.8.0
-BuildRequires:	libxfcegui4-devel >= 4.8.0
+BuildRequires:	libxfce4ui-devel >= 4.9.0
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-eyes-plugin
 
