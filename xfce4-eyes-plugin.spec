@@ -35,7 +35,7 @@ An eyes plugin for the Xfce panel.
 %{_libdir}/xfce4/panel/plugins/libeyes.so
 %{_iconsdir}/hicolor/*/apps/xfce4-eyes.png
 %{_datadir}/xfce4/eyes/themes/*/*
-
+%{_datadir}/xfce4/panel/plugins/eyes.desktop
 
 %changelog
 * Tue Apr 17 2012 Crispin Boylan <crisb@mandriva.org> 4.4.1-3mdv2012.0
