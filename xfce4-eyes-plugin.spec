@@ -32,10 +32,9 @@ An eyes plugin for the Xfce panel.
 
 %files -f %{name}.lang
 %doc ChangeLog AUTHORS
-%{_libdir}/xfce4/panel-plugins/*
+%{_libdir}/xfce4/panel/plugins/libeyes.so
 %{_iconsdir}/hicolor/*/apps/xfce4-eyes.png
 %{_datadir}/xfce4/eyes/themes/*/*
-%{_datadir}/xfce4/panel-plugins/eyes.desktop
 
 
 %changelog
