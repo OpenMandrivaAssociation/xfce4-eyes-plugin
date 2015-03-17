@@ -10,7 +10,7 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
-BuildRequires:	pkgconfig(libxfce4ui-1.0)
+BuildRequires:	pkgconfig(libxfce4ui-1)
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-eyes-plugin
 
@@ -21,7 +21,7 @@ An eyes plugin for the Xfce panel.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
