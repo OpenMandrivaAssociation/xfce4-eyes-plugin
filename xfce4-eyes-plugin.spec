@@ -3,7 +3,7 @@
 Summary:	An eyes plugin for the Xfce panel
 Name:		xfce4-eyes-plugin
 Version:	4.4.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin
