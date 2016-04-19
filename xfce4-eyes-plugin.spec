@@ -22,7 +22,7 @@ An eyes plugin for the Xfce panel.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
