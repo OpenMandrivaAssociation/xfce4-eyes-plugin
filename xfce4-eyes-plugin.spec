@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
+%define _disable_rebuild_configure 1
 
 Summary:	An eyes plugin for the Xfce panel
 Name:		xfce4-eyes-plugin
