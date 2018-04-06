@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xfce4-eyes-plugin-4.4.4.tar.bz2: ad188f810a07e622d06cc018a4eb8891d903ceaf
+sources:
+  xfce4-eyes-plugin-4.5.0.tar.bz2: 1cb1dfd3144a2096a02b1fd06dd5ad24a1242e52
