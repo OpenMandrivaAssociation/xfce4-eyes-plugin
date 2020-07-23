@@ -20,7 +20,10 @@ Obsoletes:	xfce-eyes-plugin
 An eyes plugin for the Xfce panel.
 
 %prep
-%setup -q
+%autosetup -p1
+libtoolize --force
+aclocal -I %{_datadir}/xfce4/dev-tools/m4macros
+autoconf
 
 %build
 %configure
