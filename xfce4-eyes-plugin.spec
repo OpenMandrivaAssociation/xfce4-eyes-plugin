@@ -22,9 +22,10 @@ An eyes plugin for the Xfce panel.
 
 %prep
 %autosetup -p1
-libtoolize --force
-aclocal -I %{_datadir}/xfce4/dev-tools/m4macros
-autoconf
+#libtoolize --force
+#aclocal -I %{_datadir}/xfce4/dev-tools/m4macros
+#autoconf
+%xdt_autogen \
 
 %build
 %configure
