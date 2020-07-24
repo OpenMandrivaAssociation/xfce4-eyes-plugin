@@ -14,6 +14,7 @@ BuildRequires:  intltool
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	perl(XML::Parser)
+BuildRequires:  xfce4-dev-tools
 Obsoletes:	xfce-eyes-plugin
 
 %description
