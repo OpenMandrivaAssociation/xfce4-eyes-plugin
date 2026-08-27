@@ -3,22 +3,18 @@
 
 Summary:	An eyes plugin for the Xfce panel
 Name:		xfce4-eyes-plugin
-Version:	4.6.2
+Version:	4.7.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.8.0
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+BuildRequires:	meson
 BuildRequires:	make
 BuildRequires:  intltool
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
-BuildRequires:	perl(XML::Parser)
 BuildRequires:  xfce4-dev-tools
 Obsoletes:	xfce-eyes-plugin
 
@@ -27,17 +23,14 @@ An eyes plugin for the Xfce panel.
 
 %prep
 %autosetup -p1
-#libtoolize --force
-#aclocal -I %{_datadir}/xfce4/dev-tools/m4macros
-#autoconf
 
 %build
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
 
-%make_install
+%meson_install
 
 %find_lang %{name}
 
