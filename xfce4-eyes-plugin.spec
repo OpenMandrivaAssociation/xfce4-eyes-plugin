@@ -35,7 +35,7 @@ An eyes plugin for the Xfce panel.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc ChangeLog AUTHORS
+%doc AUTHORS
 %{_libdir}/xfce4/panel/plugins/libeyes.so
 %{_iconsdir}/hicolor/*/apps/xfce4-eyes.png
 %{_datadir}/xfce4/eyes/themes/*/*
